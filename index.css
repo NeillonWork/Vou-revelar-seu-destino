@@ -1,5 +1,7 @@
 *{
   margin: 0;
+  /*box-sizing --> setado para contar a partir da borda alinhando o input*/
+  box-sizing: border-box;
 }
 
 h1{
@@ -49,4 +51,15 @@ body{
   width: 80%;
   max-width: 400px;
   margin-inline: auto;
+}
+
+#resposta{
+  margin-top: 20px;
+  transition: opacity 1s;
+}
+#resposta div{
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
