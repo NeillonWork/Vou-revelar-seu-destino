@@ -26,7 +26,21 @@ const respostas = [
 // clicar em fazer pergunta
 function fazerPergunta() {
   if (inputPergunta.value == "") {
-    alert("Digite sua Pergunta")
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-center',
+      showConfirmButton: false,
+      timer: 4500,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      title: 'Digite sua pergunta na caixa de Texto!'
+    })
     return
   }
   //travar botão
@@ -53,4 +67,4 @@ function fazerPergunta() {
     botaoPerguntar.style.color = "white"
   }, 4000)
 }
-  //console.log(numeroAleatorio)
+//console.log(numeroAleatorio)
