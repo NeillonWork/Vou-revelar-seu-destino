@@ -2,6 +2,8 @@ const elementoResposta = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#inputPergunta")
 const botaoPerguntar = document.querySelector("#botaoPerguntar")
 
+
+
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -43,6 +45,10 @@ function fazerPergunta() {
     })
     return
   }
+
+
+
+
   //travar botão
   botaoPerguntar.setAttribute("disabled", true)
   botaoPerguntar.style.background = "#5900ac"
@@ -51,12 +57,18 @@ function fazerPergunta() {
 
   const pergunta = "<div>" + inputPergunta.value + "</div>"
 
+
+
   //gerar numero aleatorio
   // Math.floor -->  arredondamento ao "Piso"
   const totalRespostas = respostas.length
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
+
+
   elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
+
+  window.speechSynthesis.speak(new SpeechSynthesisUtterance(respostas[numeroAleatorio]));
 
   elementoResposta.style.opacity = 1;
   // limpar respóstas após 4 segundos
