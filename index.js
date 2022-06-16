@@ -27,6 +27,7 @@ const respostas = [
 ]
 // clicar em fazer pergunta
 function fazerPergunta() {
+  debugger;
   if (inputPergunta.value == "") {
     const Toast = Swal.mixin({
       toast: true,
@@ -46,9 +47,6 @@ function fazerPergunta() {
     return
   }
 
-
-
-
   //travar botão
   botaoPerguntar.setAttribute("disabled", true)
   botaoPerguntar.style.background = "#5900ac"
@@ -65,9 +63,30 @@ function fazerPergunta() {
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
 
+  switch (inputPergunta.value) {
+    case 'ola':
+      respostas[numeroAleatorio] = "Olá, tudo bem com você ?";
+      break
+
+    case 'O palmeiras tem mundial?':
+    case 'O palmeiras tem mundial':
+    case 'Palmeiras tem mundial?':
+    case 'palmeiras tem mundial?':
+    case 'Palmeiras tem mundial':
+    case 'palmeiras tem mundial':
+      respostas[numeroAleatorio] = "Vi de tudo na vida, menos o mundial do Palmeiras!";
+      break
+
+    case 'Quem descobriu o Brasil':
+    case 'Quem descobriu o Brasil?':
+      respostas[numeroAleatorio] = "Napoleão Bonaparte, pode colocar na prova que você passa de ano. Confia no pai!";
+      break
+
+  }
+
+
 
   elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
-
   window.speechSynthesis.speak(new SpeechSynthesisUtterance(respostas[numeroAleatorio]));
 
   elementoResposta.style.opacity = 1;
@@ -77,6 +96,6 @@ function fazerPergunta() {
     botaoPerguntar.removeAttribute("disabled")
     botaoPerguntar.style.background = "blueviolet"
     botaoPerguntar.style.color = "white"
-  }, 4000)
+  }, 6000)
 }
 //console.log(numeroAleatorio)
