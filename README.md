@@ -7,11 +7,11 @@
 
 
 <p align="center">
-<a href="imagens">Imagens </a> -
-<a href="sobre">Sobre </a> -
-<a href="features">Features </a> -
-<a href="tecnologias">Tecnologias </a> -
-<a href="autor">Autor </a>
+<a href="#imagens">Imagens </a> -
+<a href="#sobre">Sobre </a> -
+<a href="#features">Features </a> -
+<a href="#tecnologias">Tecnologias </a> -
+<a href="#autor">Autor </a>
 </p>
 
 # Imagens
