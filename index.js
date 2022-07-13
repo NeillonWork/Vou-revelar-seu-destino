@@ -3,8 +3,6 @@ const elementoResposta = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#inputPergunta")
 const botaoPerguntar = document.querySelector("#botaoPerguntar")
 
-
-
 const respostas = [
   "Certeza!",
   "Não tenho tanta certeza.",
@@ -49,13 +47,13 @@ function fazerPergunta() {
 
   //travar botão
   botaoPerguntar.setAttribute("disabled", true)
-  botaoPerguntar.style.background = "#5900ac"
-  botaoPerguntar.style.color = "#5900ac"
+  botaoPerguntar.style.opacity = 0;
+  //botaoPerguntar.style.display = "none"
+  //botaoPerguntar.style.background = "#5900ac"
+  //botaoPerguntar.style.color = "#5900ac"
 
 
   const pergunta = "<div>" + inputPergunta.value + "</div>"
-
-
 
   //gerar numero aleatorio
   // Math.floor -->  arredondamento ao "Piso"
@@ -84,8 +82,6 @@ function fazerPergunta() {
 
   }
 
-
-
   elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
   window.speechSynthesis.speak(new SpeechSynthesisUtterance(respostas[numeroAleatorio]));
 
@@ -94,6 +90,7 @@ function fazerPergunta() {
   setTimeout(function () {
     elementoResposta.style.opacity = 0;
     botaoPerguntar.removeAttribute("disabled")
+    botaoPerguntar.style.opacity = 1;
     botaoPerguntar.style.background = "blueviolet"
     botaoPerguntar.style.color = "white"
   }, 6000)

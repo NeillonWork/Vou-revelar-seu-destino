@@ -9,10 +9,8 @@
   <script type="text/javascript" src="./index.js" defer=""></script>
   <script type="text/javascript" src="./sweetAlert2/sweetalert2.min.js" defer=""></script>
 
-
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./sweetAlert2/dark.css">
-
 
   <title>Maratona Explore - Revelar Destino</title>
 </head>
@@ -83,11 +81,12 @@
       <span style="--i:10;"></span>
     </div>
 
-    <main>
+    <main class="fade-in">
       <section>
-        <img src="https://cdn-icons-png.flaticon.com/128/4330/4330587.png" alt="Imagem de uma bola de cristal">
-        <h1>Vou revelar seu destino!</h1>
-        <p>Clique em fazer pergunta para que seu destino seja revelado</p>
+        <!-- <img src="https://cdn-icons-png.flaticon.com/128/4330/4330587.png" alt="Imagem de uma bola de cristal">-->
+        <img src="./image/ola2.gif" alt="Imagem de avatar animado" title="Dev: Neillon Almeida de Oliveira">
+        <h1 class="fade-in-text">Vou revelar seu destino!</h1>
+        <p class="fade-in-text">Clique em fazer pergunta para que seu destino seja revelado</p>
         <input id="inputPergunta" type="text" placeholder="Digite sua pergunta">
         <button id="botaoPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
         <h3 id="resposta"></h3>
