@@ -1,3 +1,4 @@
+
 const elementoResposta = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#inputPergunta")
 const botaoPerguntar = document.querySelector("#botaoPerguntar")
@@ -27,7 +28,6 @@ const respostas = [
 ]
 // clicar em fazer pergunta
 function fazerPergunta() {
-  debugger;
   if (inputPergunta.value == "") {
     const Toast = Swal.mixin({
       toast: true,
