@@ -1,5 +1,5 @@
 
-# Vou-revelar-seu-destino
+# APP: Vou revelar seu destino
 
 
 
@@ -80,6 +80,5 @@ Desafios adicionais inserido ao projeto:
 # Autor
 
 <p>
-Desenvolvido por:
-<strong>Neillon Almeida de Olivera</strong>
+Desenvolvido por: :nerd_face: <a href="https://github.com/NeillonWork"><strong> NeillonWork</strong>
 </p>
