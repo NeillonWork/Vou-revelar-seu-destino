@@ -11,6 +11,7 @@
 <a href="#sobre">Sobre </a> -
 <a href="#features">Features </a> -
 <a href="#tecnologias">Tecnologias </a> -
+<a href="#executar">Como executar o projeto</a> -
 <a href="#autor">Autor </a>
 </p>
 
@@ -64,6 +65,17 @@ Desafios adicionais inserido ao projeto:
 <li>SweetAlert2</li>
 <li>Flaticon</li>
 </ul>
+
+# Executar
+<strong> | Passos para executar o projeto localmente :</strong>
+<p>
+<b>1</b> - Clique no botão <b>Code</b>,</br> 
+<b>2</b> - Após selecione a última opção <b>"Download ZIP"</b>,</br>
+<b>3</b> - Descompacte o arquivo após o download.</br>
+<b>4</b> - Localize o arquivo index.html, de duplo clique para iniciar o projeto no <b>navegador de sua preferência. </br>
+<b>5</b> - Com o projeto aberto digite uma pergunta e após clique em <b>Fazer Pergunta</b>.
+</p>
+
 
 # Autor
 
