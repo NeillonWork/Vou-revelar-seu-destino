@@ -51,6 +51,7 @@ Desafios adicionais inserido ao projeto:
 - [x] Adicionado switch case com novos fluxos de respostas ao arquivo .js.
 - [x] Inteligência para bloquear o botão de pergunta após clique.
 - [x] Adicionado speechSynthesis para leitura das respostas.
+- [x] Adicionado fade in ao carregar a "main" do projeto. 
 - [] Trocar avatar de acordo com a resposta.
 - [] Compartilhar projeto no <a href="https://www.linkedin.com/in/neillonalmeida/" target="_blank">Linkedin </a>.
 - [x] Publicar na conta pessoal da <a href="https://vou-revelar-seu-destino.vercel.app/" target="_blank">Versel </a>.
